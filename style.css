@@ -1,3 +1,82 @@
+@media (min-width: 1399.98px) {
+    #footer {
+        margin-top: 8rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+
+    #content-div {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    #content-div .gallery {
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #content-div img {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    #high-sierra {
+        margin-bottom: 20%;
+    }
+
+    #yosemite {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #el-capitan {
+        margin-top: 20%;
+    }
+
+    #hero-section {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    nav {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    #text-center-section {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    #img-gallery-section {
+        padding-bottom: 5rem;
+    }
+
+    #footer {
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+    @media (max-width: 1399.98px) {
+        #content-div {
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+        #text-center-section {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    }
+}
+
 #hero-section {
     position: relative;
 }
@@ -9,6 +88,11 @@
     transform: translate(-50%, -50%);
 }
 
-#text-center-section {
-    height: 55vh;
+#footer-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#footer {
+    margin-top: 2rem;
 }
