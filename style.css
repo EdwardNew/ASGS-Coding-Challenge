@@ -241,7 +241,6 @@ h5 {
 }
 
 
-
 /* 
  * Image gallery animation
  * Credit: Beyond Fireship: https://www.youtube.com/watch?v=T33NN_pPeNI
@@ -261,6 +260,7 @@ h5 {
 }
 
 .show {
+    transition-delay: 250ms;
     filter: blur(0);
     transform: translateY(0);
     opacity: 1;
