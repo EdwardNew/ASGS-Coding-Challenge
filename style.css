@@ -1,4 +1,16 @@
 /* Default styles */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #hero-img {
     height: 70vh;
     background-image: url(El-Capitan.jpg);
@@ -20,8 +32,8 @@
 }
 
 #text-center-section {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 #high-sierra {
@@ -100,8 +112,8 @@
     }
 
     #text-center-section {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
 
     #img-gallery-section {
@@ -122,15 +134,134 @@
         }
 
         #text-center-section {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
+            margin-top: 8rem;
+            margin-bottom: 8rem;
         }
     }
 }
 
 /* Styles appplied to screens larger than xxl */
 @media (min-width: 1399.98px) {
+    #hero-img {
+        height: 70vh;
+    }
+
     #footer {
         margin-top: 8rem;
     }
+}
+
+/* 
+ * Hamburger Menu Animation 
+ * Credit: haydn5: https://github.com/haydn5/animated-navigation-safari-fix
+ */
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: black;
+}
+
+
+
+/* 
+ * Image gallery animation
+ * Credit: Beyond Fireship: https://www.youtube.com/watch?v=T33NN_pPeNI
+ */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translatey(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    hidden {
+        transition: none;
+    }
+}
+
+.show {
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
 }

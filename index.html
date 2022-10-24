@@ -14,8 +14,11 @@
         <div class="container-fluid py-5">
           <a class="navbar-brand" href="#">LOREM IPSUM</a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="d-none">Menu Toggler</span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -41,7 +44,7 @@
     <!-- Hero Section -->
     <section id="hero-section">
         <div id="hero-img" title="Large image of El Capitan mountain"></div>
-        <h1 id="hero-text" class="tfw-normal fst-italic text-white text-center">Lorem Ipsum</h1>
+        <h1 id="hero-text" class="tfw-normal text-white text-center">Lorem Ipsum</h1>
     </section>
 
     <div id="content-div">
@@ -49,7 +52,7 @@
         <!-- Centered Text -->
         <section id="text-center-section" class="text-center d-flex align-items-center justify-content-center">
             <div id="text-center-div" class="mx-4 mx-xs-5 px-sm-5 px-lg-0">
-                <h2 class="fw-semibold fst-italic">
+                <h2 class="">
                     Sed volupat, risus id ultricies blandit, arcu elit consectertur tellus,
                     laroreet ornare purus nulla in ipsum ac augue vitae turpis.
                 </h2>
@@ -66,13 +69,13 @@
         <section id="img-gallery-section">
             <div class="row gx-0 justify-content-center">
                 <div id="high-sierra" class="gallery col-12 col-lg-4">
-                    <img class="col-lg-11 img-fluid mb-4" src="High-Sierra.jpg" alt="Large image of a mountain in the High Sierras">
+                    <img class="hidden col-lg-11 img-fluid mb-4" src="High-Sierra.jpg" alt="Large image of a mountain in the High Sierras">
                 </div>
                 <div id="yosemite" class="gallery col-12 col-lg-4">
-                    <img class="col-lg-11 img-fluid my-4 " src="Yosemite.jpg" alt="Large image of a mountain in Yosemite">
+                    <img class="hidden col-lg-11 img-fluid my-4 " src="Yosemite.jpg" alt="Large image of a mountain in Yosemite">
                 </div>
                 <div id="el-capitan" class="gallery col-12 col-lg-4">
-                    <img class="col-lg-11 img-fluid my-4" src="Mojave.jpg" alt="Large image of El Capitan mountain">
+                    <img class="hidden col-lg-11 img-fluid my-4" src="Mojave.jpg" alt="Large image of El Capitan mountain">
                 </div>
             </div>
         </section>
@@ -167,6 +170,7 @@
 
     <!-- Bootstrap JS Import -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
