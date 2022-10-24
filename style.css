@@ -1,9 +1,56 @@
-@media (min-width: 1399.98px) {
-    #footer {
-        margin-top: 8rem;
-    }
+/* Default styles */
+#hero-img {
+    height: 70vh;
+    background-image: url(El-Capitan.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+#hero-section {
+    position: relative;
+}
+
+#hero-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-center-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#high-sierra {
+    padding-right: 20%;
+}
+
+#yosemite {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#el-capitan {
+    padding-left: 20%;
+}
+
+#img-gallery-section {
+    padding-bottom: 5rem;
+}
+
+#footer-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#footer {
+    margin-top: 2rem;
+}
+
+/* Styles applied to screens larger than lg */
 @media (min-width: 991.98px) {
 
     #content-div {
@@ -28,15 +75,18 @@
 
     #high-sierra {
         margin-bottom: 20%;
+        padding: 0;
     }
 
     #yosemite {
         margin-top: 10%;
         margin-bottom: 10%;
+        padding: 0;
     }
 
     #el-capitan {
         margin-top: 20%;
+        padding: 0;
     }
 
     #hero-section {
@@ -63,6 +113,7 @@
     }
 }
 
+/* Styles applied to screens between lg and xxl */
 @media (min-width: 991.98px) {
     @media (max-width: 1399.98px) {
         #content-div {
@@ -77,22 +128,9 @@
     }
 }
 
-#hero-section {
-    position: relative;
-}
-
-#hero-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#footer-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#footer {
-    margin-top: 2rem;
+/* Styles appplied to screens larger than xxl */
+@media (min-width: 1399.98px) {
+    #footer {
+        margin-top: 8rem;
+    }
 }
